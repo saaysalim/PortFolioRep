@@ -1,0 +1,96 @@
+body {
+  margin: 0; /* Removes default margin around the body to eliminate extra spacing */
+  font-family: Arial, sans-serif; /* Sets the default font for the entire page */
+  background-color: #f4f4f4; /* Sets a light gray background color */
+  color: #333; /* Sets a dark gray color for the default text */
+}
+
+a {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits the text color from the parent element */
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333; /* Sets a dark background color for the navigation bar */
+  padding: 2rem; /* Adds padding inside the nav for spacing */
+}
+
+.navbar {
+  list-style: none; /* Removes default bullet points from the list */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-around; /* Distributes items evenly with space around them */
+  align-items: center; /* Centers items vertically within the navbar */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+.navbar-logo {
+  display: flex; /* Uses flexbox to layout the logo */
+  justify-content: center; /* Centers the logo horizontally */
+  align-items: center; /* Centers the logo vertically */
+}
+
+.navbar-logo img {
+  width: 50px; /* Sets the width of the logo image */
+  margin-right: 1rem; /* Adds space to the right of the logo */
+}
+
+.navbar li {
+  margin: 0 1rem; /* Adds space on the left and right of each nav item */
+}
+
+.navbar li a {
+  color: white; /* Sets the text color of the links to white */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.navbar li a:hover {
+  color: #ddd; /* Changes the link color to light gray when hovered */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center; /* Centers text inside the hero section */
+  padding: 2rem 0; /* Adds vertical padding inside the hero section */
+  background-color: #f4f4f8; /* Sets a light background color for the hero */
+}
+.hero h1 {
+  font-size: 2.5rem; /* Sets the font size for the main heading in the hero */
+  margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Sets the font size for the paragraph in the hero section */
+}
+
+/* Main Content Container */
+.container {
+  padding: 2rem; /* Adds padding inside the container for spacing */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Sets a dark background color for the footer */
+  color: white; /* Sets the text color to white for contrast */
+  text-align: center; /* Centers the text inside the footer */
+  padding: 1rem 0; /* Adds vertical padding inside the footer */
+  position: fixed; /* Fixes the footer at the bottom of the viewport */
+  width: 100%; /* Ensures the footer spans the entire width */
+  bottom: 0; /* Positions the footer at the bottom of the viewport */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stacks navbar items vertically on smaller screens */
+  }
+
+  .navbar-logo img {
+    width: 40px; /* Reduces the logo size on smaller screens */
+  }
+
+  .navbar li {
+    margin: 0.5rem 0; /* Reduces the margin between navbar items on smaller screens */
+  }
+}

@@ -1,0 +1,158 @@
+body {
+    margin: 0; /* Removes default margin around the body */
+    font-family: Arial, sans-serif; /* Sets the default font family for the entire page */
+    background-color: #f4f4f4; /* Sets a light gray background color */
+    color: #110e6f; /* Sets the default text color */
+  }
+  
+  a {
+    text-decoration: none; /* Removes underline from links */
+    color: #0a241a; /* Sets link text color */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adds underline to links when hovered */
+  }
+  
+  .container {
+    max-width: 1200px; /* Limits the width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 1rem; /* Adds horizontal padding inside the container */
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center; /* Centers text inside the hero section */
+    background: #17031a; /* Sets a dark background color for the hero section */
+    color: rgb(29, 2, 2); /* Sets the text color within the hero */
+    padding: 2rem 1rem; /* Adds padding inside the hero */
+    margin-bottom: 2rem; /* Adds space below the hero section */
+  }
+  
+  .hero h1 {
+    font-size: 3rem; /* Sets a large font size for the main heading */
+    margin: 0.5rem 0; /* Adds vertical space around the heading */
+  }
+  
+  .hero p {
+    font-size: 1.2rem; /* Sets a slightly larger font size for hero paragraphs */
+    margin-top: 0.5rem; /* Adds space above the paragraph */
+  }
+  
+  /* Section Styles */
+  .section {
+    margin-bottom: 2rem; /* Adds space below each section */
+  }
+  
+  .section h2 {
+    font-size: 2rem; /* Sets a larger font size for section headings */
+    margin-bottom: 1rem; /* Adds space below the heading */
+    text-align: center; /* Centers section headings */
+    color: #333; /* Sets a dark gray color for headings */
+  }
+  
+  .section p {
+    font-size: 1rem; /* Sets the font size for section paragraphs */
+    line-height: 1.6; /* Increases line spacing for better readability */
+    text-align: center; /* Centers the text */
+  }
+  
+  /* Projects Section */
+  .projects {
+    background-color: #e9ecef; /* Sets a light background color for the projects section */
+    padding: 2rem 0; /* Adds vertical padding inside the section */
+  }
+  
+  .project-grid {
+    display: flex; /* Uses flexbox for layout */
+    gap: 1rem; /* Adds space between flex items */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: center; /* Centers the flex items */
+  }
+  
+  .project-card {
+    background: white; /* Sets a white background for project cards */
+    border: 1px solid #ddd; /* Adds a light border around the cards */
+    border-radius: 8px; /* Rounds the corners of the cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    padding: 1rem; /* Adds padding inside the cards */
+    max-width: 400px; /* Sets a maximum width for each card */
+    flex: 1 1 calc(33% - 2rem); /* Makes cards responsive and fit three per row */
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem; /* Sets a larger font size for project titles */
+    margin-bottom: 0.5rem; /* Adds space below the title */
+  }
+  
+  .project-card p {
+    font-size: 1rem; /* Sets font size for project descriptions */
+    margin-top: 0.5rem; /* Adds space above the description */
+  }
+  
+  /* Research Section */
+  .Research {
+    background: #f4f4f4; /* Sets a light background color for the research section */
+    padding: 2rem 0; /* Adds vertical padding inside the section */
+  }
+  
+  .Research h2 {
+    color: #007bff; /* Sets a blue color for the research section heading */
+  }
+  
+  .Research p {
+    max-width: 800px; /* Limits the width of the text for better readability */
+    margin: 0 auto; /* Centers the text horizontally */
+    text-align: center; /* Centers the text */
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: #e9ecef; /* Sets a light background for the contact section */
+    padding: 2rem 0; /* Adds vertical padding inside the section */
+  }
+  
+  .contact p {
+    text-align: center; /* Centers the text */
+    font-size: 1rem; /* Sets font size for the text */
+  }
+  
+  .contact a {
+    color: #007bff; /* Sets the link color in the contact section */
+  }
+  
+  .contact a:hover {
+    color: #0056b3; /* Changes the link color when hovered */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333; /* Sets a dark background color for the footer */
+    color: white; /* Sets the text color to white for contrast */
+    text-align: center; /* Centers the text inside the footer */
+    padding: 1rem; /* Adds padding inside the footer */
+    margin-top: 2rem; /* Adds space above the footer */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-grid {
+      flex-direction: column; /* Stacks project cards vertically on smaller screens */
+    }
+  
+    .project-card {
+      flex: 1 1 100%; /* Makes each project card take up the full width */
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem; /* Reduces the font size of the hero heading on smaller screens */
+    }
+  
+    .section h2 {
+      font-size: 1.5rem; /* Reduces font size of section headings on smaller screens */
+    }
+  
+    .section p {
+      font-size: 0.9rem; /* Reduces font size of paragraphs on smaller screens */
+    }
+  }
